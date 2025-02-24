@@ -1,8 +1,8 @@
-1. Where is the bash program located on your system?
+1. Where is the bash program located on your system?✅
     $ which bash
     /usr/bin/bash
 
-2. Use the --version option to find out which version you are running.
+2. Use the --version option to find out which version you are running.✅
     $ bash --version
     GNU bash, version 5.2.32(1)-release (x86_64-pc-linux-gnu)
     Copyright (C) 2022 Free Software Foundation, Inc.
@@ -11,7 +11,7 @@
     This is free software; you are free to change and redistribute it.
     There is NO WARRANTY, to the extent permitted by law.
 
-3.  Which shell configuration files are read when you login to your system using the graphical user
+3.  Which shell configuration files are read when you login to your system using the graphical user✅
     interface and then opening a terminal window?
     1. Graphical Login
         When you log in via the GUI (e.g., GNOME, KDE, etc.), the graphical display manager typically does not start a login shell. As a result:
@@ -55,7 +55,7 @@
         ~/.bash_profile, ~/.bash_login, or ~/.profile
         May also source ~/.bashrc.
 
-4. Are the following shells interactive shells? Are they login shells?
+4. Are the following shells interactive shells? Are they login shells?✅
 
     A shell opened by clicking on the background of your graphical desktop, selecting "Terminal" or such from a menu:
 
@@ -85,7 +85,7 @@
     Interactive Shell: Allows direct input/output (e.g., via terminal or SSH session).
     Login Shell: Processes login-specific configuration files (like /etc/profile, ~/.bash_profile).
 
-5. Can you explain why bash does not exit when you type Ctrl+C on the command line?
+5. Can you explain why bash does not exit when you type Ctrl+C on the command line?✅
 
     1. No Running Foreground Process
     If no command or process is running in the foreground, Bash itself is not interrupted by Ctrl+C. Instead, Bash just ignores the signal at the command prompt and remains ready for input.
@@ -103,7 +103,7 @@
     The exit command
     This behavior is by design, ensuring that Ctrl+C does not disrupt the shell itself when used inadvertently.
 
-6. Display directory stack content.
+6. Display directory stack content.✅
 
     dirs -v
 
@@ -119,7 +119,7 @@ Example:
     1  /tmp
     2  ~/Documents
 
-7. set your prompt so that it displays your location in the file system hierarchy, for instance add this line to ~/.bashrc:
+7. set your prompt so that it displays your location in the file system hierarchy, for instance add this line to ~/.bashrc:✅
 
     1. Open your ~/.bashrc file:
         nano ~/.bashrc
@@ -133,7 +133,7 @@ Example:
     3. Apply the changes: Run the following command to apply the changes to the current session:
         source ~/.bashrc
 
-8. Display hashed commands for your current shell session.
+8. Display hashed commands for your current shell session.✅
 
     1. Use the hash command:
         The hash command shows the hashed commands in the current shell session. These are commands that the shell has cached to optimize repeated execution.
@@ -149,7 +149,7 @@ Example:
             hash -r
         This command will clear the cache and remove all the hashed commands from memory. After that, the shell will re-hash commands as they are run again.
 
-9. How many processes are currently running on your system? Use ps and wc.
+9. How many processes are currently running on your system? Use ps and wc.✅
 
     ps aux | wc -l
     Explanation:
@@ -163,6 +163,6 @@ Example:
     This subtracts 1 to exclude the header line.
     ps aux | wc -l | awk '{print $1-1}'
 
-10. How to display the system hostname? Only the name, nothing more!
+10. How to display the system hostname? Only the name, nothing more!✅
 
     $ hostname
